@@ -1,4 +1,6 @@
 import { useSelector } from "react-redux"
+import NoteBox from "./NoteBox";
+import NotesField from "./NotesField";
 
 
 
@@ -7,11 +9,12 @@ function Content() {
     console.log(items);
     return (
         <div>
-            {items.map((item) => (
-               <div style={{backgroundColor: `${item.color}`}}>
-                {item.title}
-               </div> 
-            ))}
+           <NotesField/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <NoteBox />
         </div>
     )
 }
