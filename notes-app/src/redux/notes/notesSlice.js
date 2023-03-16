@@ -17,7 +17,13 @@ export const notesSlice = createSlice({
             }
         ],
     },
-    reducers:{}
+    reducers:{
+        addNotes: {
+            reducer: (state, action) => {
+                state.items.push(action.payload)
+            }
+        }
+    }
 })
 
 export default notesSlice.reducer;

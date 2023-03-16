@@ -1,13 +1,12 @@
-import { Container, TextField } from '@mui/material';
+import { Container } from '@mui/material';
+import NotesForm from './NotesForm';
 
 function Header () {
     return (
         <>
             <h1>NoteAPP</h1>
             <Container>
-                <form onSubmit={console.log("submit")}>
-                    <TextField label="Search" variant="outlined" />
-                </form>
+               <NotesForm />
             </Container>
         </>
     )
